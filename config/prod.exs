@@ -61,4 +61,5 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+config :live_view_counter, LiveViewCounterWeb.Endpoint,
+  secret_key_base: "AZ5sGXzuTH6e7g2EbczZ9woHobSVGaeAqKKUuA3/PEtRgYLg6PuURghwzgHsWoXi"
